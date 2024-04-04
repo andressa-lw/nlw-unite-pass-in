@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo evento 3",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/2655af90-5242-43a8-854f-11d0d2778bb9/attendees
+Content-Type: application/json
+
+{
+  "name": "Andressa Benedette",
+  "email": "andressa1@lumosweb.com.br"
+}
+
+###
+
+GET http://localhost:3333/events/2655af90-5242-43a8-854f-11d0d2778bb9
+
+###
+
+GET http://localhost:3333/attendees/4/badge
+
+###
+
+GET http://localhost:3333/attendees/7/check-in
+
+###
+
+GET http://localhost:3333/events/2655af90-5242-43a8-854f-11d0d2778bb9/attendees
